@@ -1,5 +1,5 @@
 # Production Dockerfile for Next.js
-FROM node:18-alpine AS base
+FROM node:20-alpine AS base
 
 # Install dependencies only when needed
 FROM base AS deps
@@ -43,10 +43,10 @@ COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
 
 USER nextjs
 
-EXPOSE 3000
+EXPOSE 8080
 
-ENV PORT 3000
-# set hostname to localhost
+# The standalone server respects the PORT environment variable
+ENV PORT 8080
 ENV HOSTNAME "0.0.0.0"
 
 CMD ["node", "server.js"]
