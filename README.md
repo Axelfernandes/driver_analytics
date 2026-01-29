@@ -1,3 +1,45 @@
+# Curri | Driver Engagement & Sentiment Dashboard 🚛
+
+This application is a specialized tool designed for the **Strategy & Operations Manager, Driver Engagement** role at **Curri**. It demonstrates a data-driven approach to driver advocacy, retention modeling, and operational experiment tracking.
+
+## 🚀 Live Demo & Deployment
+This app is ready for deployment to **Google Cloud Run**.
+
+### Prerequisites
+- [Google Cloud SDK](https://cloud.google.com/sdk/docs/install) installed and authenticated.
+- A GCP Project with billing enabled.
+
+### Quick Deploy to Cloud Run
+Run the helper script:
+```bash
+chmod +x scripts/cloud-deploy.sh
+./scripts/cloud-deploy.sh
+```
+
+## 🛠️ Tech Stack
+- **Framework**: [Next.js 15](https://nextjs.org/) (App Router)
+- **Visualization**: [Recharts](https://recharts.org/)
+- **Styling**: Vanilla CSS + Tailwind Utility Classes
+- **Containerization**: Docker (optimized for Cloud Run)
+
+## 📊 Core Features
+1.  **Retention Analytics**: Monitoring weekly driver retention trends with Recharts.
+2.  **Sentiment Mapping**: Categorizing qualitative driver feedback across the fulfillment lifecycle (Onboarding, Payment, Job Site).
+3.  **Experiment Tracker (0 → 1)**: Managing and measuring operational pilots like "Instant Pay" and "Job Site Waiting Relief".
+4.  **Strategic Recommendations**: Automated insights generated from fleet data.
+
+## 💻 Local Development
+First, install dependencies:
+```bash
+npm install
+```
+
+Then, run the development server:
+```bash
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
