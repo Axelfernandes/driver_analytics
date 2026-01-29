@@ -123,7 +123,7 @@ export default function Home() {
       {/* KPI Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {kpis.map((kpi, i) => (
-          <div key={i} className="curri-card">
+          <div key={i} className="curri-card curri-card-hover">
             <div className="flex justify-between items-start mb-4">
               <div className="p-2 bg-primary/10 rounded-lg">
                 <kpi.icon className="text-secondary" size={20} />
