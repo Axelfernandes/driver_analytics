@@ -3,7 +3,9 @@
 This application is a specialized tool designed for the **Strategy & Operations Manager, Driver Engagement** role at **Curri**. It demonstrates a data-driven approach to driver advocacy, retention modeling, and operational experiment tracking.
 
 ## 🚀 Live Demo & Deployment
-This app is ready for deployment to **Google Cloud Run**.
+
+https://curri.forgify.io/
+
 
 ### Prerequisites
 - [Google Cloud SDK](https://cloud.google.com/sdk/docs/install) installed and authenticated.
